@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submissions - Student History Journal</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+Pro:wght@400;600;700&family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="newspaper-date">
+        <span>Vol. XIV - No. 156</span>
+        <span>Monday, June 16, 2025</span>
+        <span>University Press</span>
+      </div>
+      <nav class="navbar">
+        <div class="logo">
+          <h1>History Journal</h1>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About & Rules</a>
+          </li>
+          <li class="nav-item">
+            <a href="submissions.html" class="nav-link active">Submissions</a>
+          </li>
+          <li class="nav-item">
+            <a href="submit-paper.html" class="nav-link">Submit Paper</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <div class="newspaper-divider"></div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1>Published Submissions</h1>
+          <p>Explore student research papers on historical topics</p>
+        </div>
+      </section>
+
+      <section class="filters-section">
+        <div class="container">
+          <div class="filters">
+            <div class="search-filter">
+              <input
+                type="text"
+                id="search-papers"
+                placeholder="Search by title or author"
+              />
+              <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="category-filter">
+              <label for="category-select">Category:</label>
+              <select id="category-select">
+                <option value="all">All Categories</option>
+                <option value="ancient">Ancient History</option>
+                <option value="medieval">Medieval History</option>
+                <option value="modern">Modern History</option>
+                <option value="us">U.S. History</option>
+                <option value="world">World History</option>
+              </select>
+            </div>
+            <div class="sort-filter">
+              <label for="sort-select">Sort By:</label>
+              <select id="sort-select">
+                <option value="newest">Newest First</option>
+                <option value="oldest">Oldest First</option>
+                <option value="az">Title A-Z</option>
+                <option value="za">Title Z-A</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="papers-section">
+        <div class="container">
+          <div class="papers-count">
+            <p>Showing <span id="papers-count">0</span> papers</p>
+          </div>
+          <div class="papers-container" id="papers-container">
+            <!-- Papers will be loaded dynamically with JavaScript -->
+            <div class="loading">
+              <p>Loading papers...</p>
+            </div>
+          </div>
+          <div class="pagination" id="pagination">
+            <!-- Pagination will be generated dynamically -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Student History Journal</h3>
+          <p>
+            A platform for history students to share their research and
+            insights.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About & Rules</a></li>
+            <li><a href="submissions.html">Browse Submissions</a></li>
+            <li><a href="submit-paper.html">Submit Paper</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Email: journal@example.edu</p>
+          <p>Department of History</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="current-year"></span> Student History Journal. All
+          Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/papers.js"></script>
+  </body>
+</html>

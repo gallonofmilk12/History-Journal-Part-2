@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student History Journal</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+Pro:wght@400;600;700&family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="newspaper-date">
+        <span>Vol. XIV - No. 156</span>
+        <span>Monday, June 16, 2025</span>
+        <span>University Press</span>
+      </div>
+      <nav class="navbar">
+        <div class="logo">
+          <h1>History Journal</h1>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About & Rules</a>
+          </li>
+          <li class="nav-item">
+            <a href="submissions.html" class="nav-link">Submissions</a>
+          </li>
+          <li class="nav-item">
+            <a href="submit-paper.html" class="nav-link">Submit Paper</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <div class="newspaper-divider"></div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="extra-banner">EXTRA</div>
+        <div class="hero-content">
+          <h2>Welcome to the Student History Journal</h2>
+          <p>
+            A peer-reviewed platform for history students to publish their
+            research and insights.
+          </p>
+          <div class="cta-buttons">
+            <a href="submissions.html" class="btn primary">Browse Papers</a>
+            <a href="submit-paper.html" class="btn secondary"
+              >Submit Your Work</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="feature-card">
+          <div class="card-number">1</div>
+          <i class="fas fa-book-open"></i>
+          <h3>Peer-Reviewed</h3>
+          <p>
+            All papers undergo a thorough peer review process to ensure quality
+            and accuracy.
+          </p>
+          <div class="newspaper-stamp">VERIFIED</div>
+        </div>
+        <div class="feature-card">
+          <div class="card-number">2</div>
+          <i class="fas fa-users"></i>
+          <h3>Community</h3>
+          <p>Join a community of history enthusiasts and academic scholars.</p>
+          <div class="newspaper-stamp">COMMUNITY</div>
+        </div>
+        <div class="feature-card">
+          <div class="card-number">3</div>
+          <i class="fas fa-certificate"></i>
+          <h3>Recognition</h3>
+          <p>Get your work recognized and build your academic portfolio.</p>
+          <div class="newspaper-stamp">ENDORSED</div>
+        </div>
+      </section>
+      <section class="recent-papers">
+        <div class="section-heading">
+          <h2>Recent Publications</h2>
+          <div class="newspaper-date-line">June 16, 2025</div>
+        </div>
+        <div class="papers-container" id="recent-papers-container">
+          <!-- Papers will be loaded dynamically with JavaScript -->
+          <div class="loading">
+            <p>Loading recent papers...</p>
+          </div>
+        </div>
+        <div class="newspaper-page-number">Page 1</div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Student History Journal</h3>
+          <p>
+            A platform for history students to share their research and
+            insights.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About & Rules</a></li>
+            <li><a href="submissions.html">Browse Submissions</a></li>
+            <li><a href="submit-paper.html">Submit Paper</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Email: journal@example.edu</p>
+          <p>Department of History</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="current-year"></span> Student History Journal. All
+          Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/papers.js"></script>
+  </body>
+</html>

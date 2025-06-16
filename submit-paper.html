@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submit Paper - Student History Journal</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+Pro:wght@400;600;700&family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="newspaper-date">
+        <span>Vol. XIV - No. 156</span>
+        <span>Monday, June 16, 2025</span>
+        <span>University Press</span>
+      </div>
+      <nav class="navbar">
+        <div class="logo">
+          <h1>History Journal</h1>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About & Rules</a>
+          </li>
+          <li class="nav-item">
+            <a href="submissions.html" class="nav-link">Submissions</a>
+          </li>
+          <li class="nav-item">
+            <a href="submit-paper.html" class="nav-link active">Submit Paper</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      <div class="newspaper-divider"></div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <div class="extra-banner">CONTRIBUTIONS</div>
+          <h1>Submit Your Paper</h1>
+          <div class="newspaper-date-line">June 16, 2025</div>
+          <p>Share your historical research with the academic community</p>
+        </div>
+      </section>
+
+      <section class="submission-guidelines">
+        <div class="container">
+          <div class="guidelines-box">
+            <div class="section-heading">
+              <h3><i class="fas fa-info-circle"></i> Submission Guidelines</h3>
+              <div class="newspaper-date-line">Editorial Requirements</div>
+            </div>
+            <p>
+              Before submitting your paper, please ensure it meets the following
+              requirements:
+            </p>
+            <ul>
+              <li>1,500-5,000 words in length (excluding citations)</li>
+              <li>Original research on a historical topic</li>
+              <li>Follows Chicago Manual of Style for citations</li>
+              <li>Includes an abstract (200 words maximum)</li>
+              <li>PDF format only</li>
+            </ul>
+            <p>
+              For complete guidelines and submission rules, please visit our
+              <a href="about.html">About & Rules</a> page.
+            </p>
+            <div class="newspaper-stamp">OFFICIAL</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="submission-form">
+        <div class="container">
+          <form id="paper-submission-form">
+            <div class="section-heading">
+              <h2>Paper Submission Form</h2>
+              <div class="newspaper-date-line">For Academic Review</div>
+            </div>
+
+            <div class="form-section">
+              <div class="section-heading">
+                <h3>Author Information</h3>
+                <div class="newspaper-date-line">Personal Details</div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="author-first-name">First Name*</label>
+                  <input type="text" id="author-first-name" required />
+                </div>
+                <div class="form-group">
+                  <label for="author-last-name">Last Name*</label>
+                  <input type="text" id="author-last-name" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="author-email">Email Address*</label>
+                  <input type="email" id="author-email" required />
+                </div>
+                <div class="form-group">
+                  <label for="author-institution">Academic Institution*</label>
+                  <input type="text" id="author-institution" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="author-bio">Author Bio (150 words max)*</label>
+                <textarea
+                  id="author-bio"
+                  rows="3"
+                  maxlength="1000"
+                  required
+                ></textarea>
+                <div class="char-count">
+                  <span id="bio-char-count">0</span>/1000 characters
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <div class="section-heading">
+                <h3>Paper Information</h3>
+                <div class="newspaper-date-line">Manuscript Details</div>
+              </div>
+              <div class="form-group">
+                <label for="paper-title">Paper Title*</label>
+                <input type="text" id="paper-title" required />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="paper-category">Category*</label>
+                  <select id="paper-category" required>
+                    <option value="">Select a category</option>
+                    <option value="ancient">Ancient History</option>
+                    <option value="medieval">Medieval History</option>
+                    <option value="modern">Modern History</option>
+                    <option value="us">U.S. History</option>
+                    <option value="world">World History</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="paper-keywords"
+                    >Keywords* (separate with commas)</label
+                  >
+                  <input
+                    type="text"
+                    id="paper-keywords"
+                    placeholder="e.g., World War II, European History"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="paper-abstract">Abstract (200 words max)*</label>
+                <textarea
+                  id="paper-abstract"
+                  rows="4"
+                  maxlength="1500"
+                  required
+                ></textarea>
+                <div class="char-count">
+                  <span id="abstract-char-count">0</span>/1500 characters
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <div class="section-heading">
+                <h3>Paper Submission</h3>
+                <div class="newspaper-date-line">Manuscript Upload</div>
+              </div>
+              <div class="form-group">
+                <label for="paper-file"
+                  >Upload Paper* (PDF format, 10MB max)</label
+                >
+                <div class="file-upload">
+                  <input type="file" id="paper-file" accept=".pdf" required />
+                  <div class="file-upload-btn">
+                    <i class="fas fa-cloud-upload-alt"></i> Choose File
+                  </div>
+                  <div class="file-name" id="file-name">No file chosen</div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="cover-letter">Cover Letter (Optional)</label>
+                <textarea
+                  id="cover-letter"
+                  rows="4"
+                  placeholder="Include any notes to the editors here..."
+                ></textarea>
+              </div>
+              <div class="newspaper-stamp">SUBMISSION</div>
+            </div>
+
+            <div class="form-section">
+              <div class="section-heading">
+                <h3>Terms and Conditions</h3>
+                <div class="newspaper-date-line">Legal Requirements</div>
+              </div>
+              <div class="form-group checkbox-group">
+                <input type="checkbox" id="terms-originality" required />
+                <label for="terms-originality"
+                  >I confirm that this paper is my original work and has not
+                  been published elsewhere.*</label
+                >
+              </div>
+              <div class="form-group checkbox-group">
+                <input type="checkbox" id="terms-guidelines" required />
+                <label for="terms-guidelines"
+                  >I have read and agree to the submission guidelines and peer
+                  review process.*</label
+                >
+              </div>
+              <div class="form-group checkbox-group">
+                <input type="checkbox" id="terms-revisions" required />
+                <label for="terms-revisions"
+                  >I understand that revisions may be required before
+                  publication.*</label
+                >
+              </div>
+              <div class="newspaper-stamp">AGREED</div>
+            </div>
+
+            <div class="form-actions">
+              <p class="required-fields">* Required fields</p>
+              <div class="buttons">
+                <button type="button" class="btn secondary" id="save-draft">
+                  Save Draft
+                </button>
+                <button type="submit" class="btn primary">Submit Paper</button>
+              </div>
+            </div>
+          </form>
+          <div class="newspaper-page-number">Page 4</div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Student History Journal</h3>
+          <p>
+            A platform for history students to share their research and
+            insights.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About & Rules</a></li>
+            <li><a href="submissions.html">Browse Submissions</a></li>
+            <li><a href="submit-paper.html">Submit Paper</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>Email: journal@example.edu</p>
+          <p>Department of History</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="current-year"></span> Student History Journal. All
+          Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/submit-paper.js"></script>
+  </body>
+</html>
